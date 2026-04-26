@@ -181,7 +181,7 @@ with st.sidebar:
     st.markdown("**Tata Steel — Quality Control**")
     st.divider()
 
-    ckpt_path = st.text_input("Model checkpoint", "./outputs/best_model.pth")
+    ckpt_path = st.text_input("Model checkpoint", "best_model.pth")
     alpha_val = st.slider("Heatmap opacity", 0.1, 0.9, 0.45, 0.05)
 
     st.divider()
