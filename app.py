@@ -111,7 +111,7 @@ class GradCAMPlusPlus:
 
 
 @st.cache_resource
-def load_model_cached(ckpt="./outputs/best_model.pth"):
+def load_model_cached(ckpt="best_model.pth"):
     model = SteelDefectModel()
     if os.path.exists(ckpt):
         model.load_state_dict(torch.load(ckpt, map_location=DEVICE))
