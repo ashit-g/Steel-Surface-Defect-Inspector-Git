@@ -27,7 +27,6 @@ from pathlib import Path
 # ─────────────────────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="Tata Steel — Defect Inspection AI",
-    page_icon="🏗️",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -206,7 +205,7 @@ with st.sidebar:
 # ─────────────────────────────────────────────────────────────────────────────
 # Main layout
 # ─────────────────────────────────────────────────────────────────────────────
-st.title("🏗️ Tata Steel — Microlevel Surface Defect Inspector")
+st.title("Tata Steel — Microlevel Surface Defect Inspector")
 st.markdown(
     "*CNN-based real-time quality inspection with Transfer Learning, "
     "Data Augmentation & Explainable AI (Grad-CAM++)*"
@@ -217,7 +216,7 @@ model = load_model_cached(ckpt_path)
 
 # ── Tabs ─────────────────────────────────────────────────────────────────────
 tab1, tab2, tab3 = st.tabs(
-    ["🔍 Single Image Analysis", "📊 Batch Simulation", "🧠 Model Insights"]
+    ["Single Image Analysis", "Batch Simulation", "Model Insights"]
 )
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -484,10 +483,10 @@ Training strategy:
 
         st.markdown("### Creative Additions")
         st.success("""
-🎯 **Defect Severity Scoring** — Quantifies risk from heatmap activation area  
-🌡️ **Temperature Calibration** — Reliable confidence scores (Guo et al., 2017)  
-🏭 **Production Dashboard** — Real-time throughput & rejection rate KPIs  
-📊 **ROC Curves per class** — Operator-level diagnostic transparency  
+**Defect Severity Scoring** — Quantifies risk from heatmap activation area  
+**Temperature Calibration** — Reliable confidence scores (Guo et al., 2017)  
+**Production Dashboard** — Real-time throughput & rejection rate KPIs  
+**ROC Curves per class** — Operator-level diagnostic transparency  
 """)
 
 st.divider()
