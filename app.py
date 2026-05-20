@@ -175,7 +175,7 @@ def apply_heatmap(img_np, cam, alpha=0.45):
 # Sidebar
 # ─────────────────────────────────────────────────────────────────────────────
 with st.sidebar:
-    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/320px-Tata_logo.svg.png",
+    st.image("image.png",
              width=100)
     st.title("ThAI")
     st.markdown("**Tata Steel — Quality Control**")
